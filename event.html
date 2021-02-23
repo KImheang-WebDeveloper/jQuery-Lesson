@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery Event</title>
+	<style>
+		* { margin: 0; padding: 0; box-sizing: border-box; }
+		.header { background-color: #131B28; width: 100%; padding: 50px 0; }
+		.header h3 { color: #fff; text-align: center; font-family: Arial; font-size: 40px; }
+		table { border-collapse: collapse; border: 2px solid rgb(200, 200, 200); letter-spacing: 1px; font-size: 0.8rem; }
+      	td, th { border: 1px solid rgb(190, 190, 190); padding: 10px 20px; }
+		.container { padding: 50px 50px; }
+	</style>
+	<script type="text/javascript" src="jquery.min.js"></script>
+</head>
+<body>
+	<div class="header">
+		<h3>jQuery Event</h3>
+	</div>
+	<div class="container">
+		<button type="button" id="btn1">Click Btn1</button>
+		<button type="button" id="btn2">Click Btn2</button>
+
+		<p id="para1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<br><br>
+
+		<input type="text" placeholder="Enter Text">
+		<br><br>
+		<form>
+			First Name: <input type="text" value="John"><br><br>
+			Last Name: <input type="text" value="Doe"><br><br>
+			<button type="submit">Submit</button>
+		</form>
+	</div>
+
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			// $('#btn2').click(function() {
+			// 	alert('You click button 1')
+			// })
+
+			// $('#btn1').on('click', function() {
+			// 	alert("Hello")
+			// })
+
+			// $('#btn1').dblclick(function() {
+			// 	console.log('Hi Everyone')
+			// })
+
+			// $('#btn1').click(function() {
+			// 	$('#para1').hide()
+			// })
+
+			// $('#btn2').click(function() {
+			// 	$('#para1').show()
+			// })
+
+			// $('#btn1').click(function() {
+			// 	$('#para1').toggle()
+			// })
+
+			// $('#btn1').mouseenter(function() {
+			// 	$('#para1').css('color', 'blue')
+			// })
+			// $('#btn1').mouseleave(function() {
+			// 	$('#para1').css('color', 'red')
+			// })
+
+			// $('#btn1').hover(function() {
+			// 	$('#para1').css('color', 'blue')
+			// })
+
+			// $('#btn1').mousedown(function() {
+			// 	$('#para1').css('color', 'blue')
+			// })
+			// $('#btn1').mouseup(function() {
+			// 	$('#para1').css('color', 'red')
+			// })
+
+			// $('input').keydown(function() {
+			// 	$(this).css('background', 'red')
+			// })
+
+			// $('input').keyup(function() {
+			// 	$(this).css('background', 'blue')
+			// })
+
+			// $('input').keypress(function() {
+			// 	$(this).css('background', 'black')
+			// })
+
+			$('form').submit(function() {
+				alert('You are submited!')
+			})
+
+		})
+	</script>
+</body>
+</html>
